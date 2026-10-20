@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f8f3e8;
+    color: #333;
+}
+
+.navbar{
+    background-color: #3f5138;
+    padding: 20px 60px;
+    justify-content: space-between;
+    align-items: center; /* BLANK 2 - FIXED */
+}
+
+.navbar h1{
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero{
+    min-height: 400px;
+    display: flex; /* BLANK 3 - FIXED */
+    justify-content: center; /* BLANK 4 - FIXED */
+    align-items: center; /* BLANK 5 - FIXED */
+    text-align: center;
+    background-color: #d9dfc8;
+    padding: 10px;
+}
+
+.hero-content{
+    max-width: 700px;
+}
+
+.hero h2{
+    font-size: 50px;
+    margin-bottom: 20px; /* BLANK 6 - FIXED, you can put 20px */
+    color: #34432e;
+}
+
+.hero p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.hero button{
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f5138;
+    color: white;
+    cursor: pointer;
+}
+
+/* ABOUT */
+.about{
+    padding: 70px 60px;
+    /* GRID - fixed from flex */
+    display: grid; /* FIXED - was flex but has grid-template-columns */
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img{
+    width: 90%;
+    height: 80;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #3f5138;
+}
+
+.about-content p{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* STORIES */
+.stories{
+    padding: 70px 60px;
+    text-align: right;
+}
+
+.stories h2{
+    font-size: 50px;
+    color: #3f5138;
+}
+
+.section-description{
+    font-size: 100;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* STORY GRID */
+.story-container{
+    /* CSS GRID */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+
+/* STORY CARD */
+.story-card{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+.story-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.story-card h3{
+    font-size: 21px;
+    margin: 20px 20px 10px;
+    color: #3f5138;
+}
+
+.story-card p{
+    line-height: 1.5;
+    margin: 0 20px;
+}
+
+.story-card button{
+    margin: 20px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f5138;
+    color: white;
+    cursor: pointer;
+}
+
+.story-card button:hover{
+    background-color: #293721;
+}
+.story-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #eee;
+}
